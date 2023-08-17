@@ -55,14 +55,17 @@ h1{
 .container{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 20px 15px;
 }
 
 @media (max-width: 767px) {
     .column{
-      flex-direction: column; /* Display cards vertically on mobile */
+      flex-direction: column; 
       width: auto; }
+      .container{
+        flex-direction: column;}
+    }
 
 .column { 
     flex:1;
@@ -70,7 +73,7 @@ h1{
     padding:3.125rem;
     max-width: 20.4375rem;
     max-height: 35rem;
-    border-radius: 8px;/*/////*/
+    border-radius: 8px;
 }
     
     
